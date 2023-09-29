@@ -1,5 +1,14 @@
-SELECT *
+SELECT
+    descCategoria,
+    count(DISTINCT idPedido)
 
-FROM item_pedido
+FROM item_pedido as t2
 
-WHERE idPedido = "98fe01bc254b759c1f2c11d77c2891d5"
+    LEFT JOIN produto as t3
+    on t2.idProduto = t3.idProduto
+
+    AND t2.idVendedor is NOT NULL
+
+    GROUP BY descCategoria
+    ORDER BY 2 DESC
+    
