@@ -1,3 +1,5 @@
+CREATE TABLE analytics.fs_vendedor_entrega AS(
+
 WITH tb_pedido AS
 (SELECT
     t1.idPedido,
@@ -29,6 +31,7 @@ WITH tb_pedido AS
 )
 
 SELECT
+    '2018-01-01' as dtReference,
     idVendedor,
     COUNT(DISTINCT CASE WHEN descSituacao = 'canceled' then idPedido END)* 1.0 /
     COUNT(idPedido) AS pctPedidoCancelado,
@@ -50,3 +53,4 @@ SELECT
 
 FROM tb_pedido
 GROUP BY idVendedor
+)
