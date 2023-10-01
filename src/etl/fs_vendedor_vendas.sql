@@ -1,13 +1,15 @@
 WITH tb_join AS(
 
-    SELECT t1.dtPedido, t2.*
-        FROM pedido as t1
-        LEFT JOIN item_pedido as t2
-        ON t1.idPedido = t2.idPedido
+    SELECT 
+        t1.dtPedido,
+        t2.*
+    FROM pedido as t1
+    LEFT JOIN item_pedido as t2
+    ON t1.idPedido = t2.idPedido
 
-        WHERE t1.dtPedido < '2018-01-01'
-        AND t1.dtPedido >= '2017-06-01'
-        AND t2.idVendedor IS NOT NULL
+    WHERE dtPedido < DATE('{date}')
+    AND dtPedido >= DATE('{date}', '-7 months')
+    AND t2.idVendedor IS NOT NULL
 
 ),
 
@@ -42,14 +44,14 @@ tb_lifecycle AS(
 SELECT
     t2.idVendedor,
     sum(vlPreco) AS lifeTimeValue,
-    JULIANDAY(DATE('2018-01-01')) - JULIANDAY(MIN(DATE(t1.dtPedido))) AS qtdDiasPrimeiraVenda,
-    JULIANDAY(DATE('2018-01-01')) - JULIANDAY(MAX(DATE(dtPedido))) AS qtdRecenciaVenda
+    JULIANDAY(DATE('{date}')) - JULIANDAY(MIN(DATE(t1.dtPedido))) AS qtdDiasPrimeiraVenda,
+    JULIANDAY(DATE('{date}')) - JULIANDAY(MAX(DATE(dtPedido))) AS qtdRecenciaVenda
 
 FROM pedido as t1
 LEFT JOIN item_pedido as t2
 ON t1.idPedido = t2.idPedido
 
-WHERE t1.dtPedido < '2018-01-01'
+WHERE t1.dtPedido < '{date}'
 AND t2.idVendedor IS NOT NULL
 
 GROUP BY t2.idVendedor
@@ -82,7 +84,8 @@ GROUP BY idVendedor
 )
 
 SELECT
-    '2018-01-01' AS dtReference,
+    '{date}' AS dtReference,
+    date('now') AS dtIngestion,
     t1.*,
     t2.lifeTimeValue,
     t2.qtdDiasPrimeiraVenda,

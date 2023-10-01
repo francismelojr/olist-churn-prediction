@@ -1,0 +1,1 @@
+SELECT * FROM abt_olist_churn

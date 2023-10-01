@@ -3,17 +3,17 @@ WITH tb_join AS
     t2.idVendedor,
     t3.*
 
-    FROM PEDIDO AS t1
+FROM PEDIDO AS t1
 
-    LEFT JOIN item_pedido as t2
-    on t1.idPedido = t2.idPedido
+LEFT JOIN item_pedido as t2
+on t1.idPedido = t2.idPedido
 
-    LEFT JOIN produto as t3
-    on t2.idProduto = t3.idProduto
+LEFT JOIN produto as t3
+on t2.idProduto = t3.idProduto
 
-    WHERE t1.dtPedido < '2018-01-01'
-    AND t1.dtPedido >= '2017-06-01'
-    AND t2.idVendedor is NOT NULL
+WHERE t1.dtPedido < DATE('{date}')
+AND t1.dtPedido >= DATE('{date}', '-7 months')
+AND t2.idVendedor is NOT NULL
 ),
 
 tb_summary as 
@@ -71,7 +71,8 @@ SELECT
 )
 
 SELECT 
-    '2018-01-01' AS dtReference,
+    '{date}' AS dtReference,
+    date('now') AS dtIngestion,
     t1.*,
     t2.pctSalesOnTop15Category 
     FROM tb_summary as t1

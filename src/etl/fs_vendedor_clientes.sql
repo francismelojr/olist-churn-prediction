@@ -14,8 +14,8 @@ ON t1.idPedido = t2.idPedido
 LEFT JOIN cliente as t3
 ON t1.idCliente = t3.idCliente
 
-WHERE dtPedido < DATE('{date}')
-AND dtPedido >= DATE('{date}', '-7 months')
+WHERE t1.dtPedido < DATE('{date}')
+AND t1.dtPedido >= DATE('{date}', '-7 months')
 AND idVendedor IS NOT NULL
 ),
 

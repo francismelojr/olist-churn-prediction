@@ -9,8 +9,8 @@ FROM pedido AS t1
 LEFT JOIN item_pedido as t2
 on t1.idPedido = t2.idPedido
 
-WHERE t1.dtPedido < '2018-01-01'
-AND t1.dtPedido >= '2017-06-01'
+WHERE t1.dtPedido < DATE('{date}')
+AND t1.dtPedido >= DATE('{date}', '-7 months')
 AND idVendedor IS NOT NULL
 ),
 
@@ -126,7 +126,8 @@ SELECT
 )
 
 SELECT 
-        '2018-01-01' AS dtReference,
+        '{date}' AS dtReference,
+        date('now') AS dtIngestion,
         t1.*,
         t2.avgQtdParcelas,
         t2.maxQtdParcelas,
