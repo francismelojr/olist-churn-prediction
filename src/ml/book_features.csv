@@ -1,0 +1,96 @@
+﻿Variável;Descrição
+dtReference;Data de referência da safra.
+idVendedor;Id do vendedor.
+qtdPedidos;Quantidade de pedidos feitos pelo vendedor.
+qtdDiasComPedidos;Quantidade de dias distintos em que o vendedor fez pedidos.
+qtItens;Quantidade de itens distintos em que q vendedor vendeu.
+ticketMedio;Ticket médio do vendedor (Faturamento/Quantidade de vendas)
+avgValorProduto;Média dos valores dos produtos vendidos.
+maxValorProduto;Valor máximo de venda dos produtos.
+minValorProduto;Valor mínimo de venda dos produtos.
+avgProdutoPorPedido;Média de número de produtos por pedido.
+lifeTimeValue;Receita total do vendedor na plataforma.
+qtdDiasPrimeiraVenda;Quantidade de dias desde a primeira venda do vendedor.
+qtdRecenciaVenda;Quantidade de dias que o vendedor está sem realizar uma venda.
+avgIntervaloVendas;Média do intervalo de dias entre uma venda e a próxima.
+avgNota;Média da avaliação recebida por pedido.
+minNota;Mínimo da avaliação recebida por pedido.
+maxNota;Máximo da avaliação recebida por pedido.
+pctAvaliacao;Percentual do total dos pedidos que foram avaliados.
+qtdUFsDistintos;Quantidades de Ufs distintos que o vendedor fez vendas.
+pctPedidoAC;Percentual do total dos pedidos que foram realizados para o UF AC.
+pctPedidoAL;Percentual do total dos pedidos que foram realizados para o UF AL.
+pctPedidoAM;Percentual do total dos pedidos que foram realizados para o UF AM.
+pctPedidoAP;Percentual do total dos pedidos que foram realizados para o UF AP.
+pctPedidoBA;Percentual do total dos pedidos que foram realizados para o UF BA.
+pctPedidoCE;Percentual do total dos pedidos que foram realizados para o UF CE.
+pctPedidoDF;Percentual do total dos pedidos que foram realizados para o UF DF.
+pctPedidoES;Percentual do total dos pedidos que foram realizados para o UF ES.
+pctPedidoGO;Percentual do total dos pedidos que foram realizados para o UF GO.
+pctPedidoMA;Percentual do total dos pedidos que foram realizados para o UF MA.
+pctPedidoMG;Percentual do total dos pedidos que foram realizados para o UF MG.
+pctPedidoMS;Percentual do total dos pedidos que foram realizados para o UF MS.
+pctPedidoMT;Percentual do total dos pedidos que foram realizados para o UF MT.
+pctPedidoPA;Percentual do total dos pedidos que foram realizados para o UF PA.
+pctPedidoPB;Percentual do total dos pedidos que foram realizados para o UF PB.
+pctPedidoPE;Percentual do total dos pedidos que foram realizados para o UF PE.
+pctPedidoPI;Percentual do total dos pedidos que foram realizados para o UF PI.
+pctPedidoPR;Percentual do total dos pedidos que foram realizados para o UF PR.
+pctPedidoRJ;Percentual do total dos pedidos que foram realizados para o UF RJ.
+pctPedidoRN;Percentual do total dos pedidos que foram realizados para o UF RN.
+pctPedidoRO;Percentual do total dos pedidos que foram realizados para o UF RO.
+pctPedidoRR;Percentual do total dos pedidos que foram realizados para o UF RR.
+pctPedidoRS;Percentual do total dos pedidos que foram realizados para o UF RS.
+pctPedidoSC;Percentual do total dos pedidos que foram realizados para o UF SC.
+pctPedidoSE;Percentual do total dos pedidos que foram realizados para o UF SE.
+pctPedidoSP;Percentual do total dos pedidos que foram realizados para o UF SP.
+pctPedidoTO;Percentual do total dos pedidos que foram realizados para o UF TO.
+pctPedidoCancelado;Percentual do total de pedidos que foram cancelados.
+pctPedidosAtrasados;Percentual do total de pedidos que foram entregue com atraso.
+avgFrete;Média do frete dos pedidos.
+maxFrete;Máximo valor de frete dos pedidos.
+minFrete;Mínimo valor de frete dos pedidos.
+avgDifDiasEntregaAprovado;Média da diferença de dias entre a data de entrega e data de pagamento aprovado.
+avgDifDiasEntregaEstimativa;Média da diferença de dias entre a data de entrega e data de estimativa de entrega.
+qtde_credit_card_pedido;Quantidade de pedidos realizados através de cartão de crédito.
+qtde_boleto_pedido;Quantidade de pedidos realizados através de boleto.
+qtde_debit_card_pedido;Quantidade de pedidos realizados através de cartão de débito.
+qtde_voucher_pedido;Quantidade de pedidos realizados através de vouchers.
+valor_credit_card_pedido;Valores de pedidos realizados através de cartão de crédito.
+valor_boleto_pedido;Valores de pedidos realizados através de boleto.
+valor_debit_card_pedido;Valores de pedidos realizados através de cartão de débito.
+valor_voucher_pedido;Valores de pedidos realizados através de vouchers.
+pct_qtd_credit_card_pedido;Percentual de pedidos realizados através de cartão de crédito.
+pct_qtd_boleto_pedido;Percentual de pedidos realizados através de boleto.
+pct_qtd_debit_card_pedido;Percentual de pedidos realizados através de cartão de débito.
+pct_qtd_voucher_pedido;Percentual de pedidos realizados através de vouchers.
+pct_valor_credit_card_pedido;Percentual dos valores dos pedidos realizados através de cartão de crédito.
+pct_valor_boleto_pedido;Percentual dos valores dos pedidos realizados através de boleto.
+pct_valor_debit_card_pedido;Percentual dos valores dos pedidos realizados através de cartão de débito.
+pct_valor_voucher_pedido;Percentual dos valores dos pedidos realizados através de vouchers.
+avgQtdParcelas;Média de parcelas dos pagamentos dos pedidos, caso tenham sido feitos com cartão de crédito.
+maxQtdParcelas;Máximo da quantidade de parcelas dos pagamentos dos pedidos, caso tenham sido feitos com cartão de crédito.
+minQtdParcelas;Mínimo da quantidade de parcelas dos pagamentos dos pedidos, caso tenham sido feitos com cartão de crédito.
+qtdCategoriasVendedor;Quantidade de categorias de produtos vendidas pelo vendedor.
+avgFotosVendedor;Média de fotos dos anúncios do produto do vendedor.
+avgPesoGramas;Média de peso em gramas dos produtos do vendedor.
+avgVolProduto;Média de volume em gramas dos produtos do vendedor.
+minVolProduto;Mínimo de volume em gramas dos produtos do vendedor.
+maxVolProduto;Máximo de volume em gramas dos produtos do vendedor.
+pctCategoria_cama_mesa_banho;Percentual do total de quantidade de pedidos realizados na categoria cama e mesa e banho.
+pctCategoria_beleza_saude;Percentual do total de quantidade de pedidos realizados na categoria beleza e saude.
+pctCategoria_esporte_lazer;Percentual do total de quantidade de pedidos realizados na categoria esporte e lazer.
+pctCategoria_informatica_acessorios;Percentual do total de quantidade de pedidos realizados na categoria informatica e acessorios.
+pctCategoria_moveis_decoracao;Percentual do total de quantidade de pedidos realizados na categoria moveis e decoracao.
+pctCategoria_utilidades_domesticas;Percentual do total de quantidade de pedidos realizados na categoria utilidades e domesticas.
+pctCategoria_relogios_presentes;Percentual do total de quantidade de pedidos realizados na categoria relogios e presentes.
+pctCategoria_telefonia;Percentual do total de quantidade de pedidos realizados na categoria telefonia.
+pctCategoria_automotivo;Percentual do total de quantidade de pedidos realizados na categoria automotivo.
+pctCategoria_brinquedos;Percentual do total de quantidade de pedidos realizados na categoria brinquedos .
+pctCategoria_cool_stuff;Percentual do total de quantidade de pedidos realizados na categoria cool stuff.
+pctCategoria_ferramentas_jardim;Percentual do total de quantidade de pedidos realizados na categoria ferramentas e jardim.
+pctCategoria_perfumaria;Percentual do total de quantidade de pedidos realizados na categoria perfumaria.
+pctCategoria_bebes;Percentual do total de quantidade de pedidos realizados na categoria bebes.
+pctCategoria_eletronico;Percentual do total de quantidade de pedidos realizados na categoria eletronico.
+pctSalesOnTop15Category;Percentual do total de quantidade de pedidos realizados nas top 15 categorias mais vendidas.
+flChurn;Target do problema. Diz se o cliente deu Churn quando 1 e não deu Churn quando 0. Por padrão, consideramos Churn caso o vendedor fique sem realizar uma venda durante 45 dias.
